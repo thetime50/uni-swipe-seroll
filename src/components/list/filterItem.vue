@@ -149,6 +149,7 @@
         top: 0;
         bottom: 0;
         z-index: 500;
+        background: rgba(0, 0, 175, 0.2);
     }
     .mask-1{
         position: absolute;
