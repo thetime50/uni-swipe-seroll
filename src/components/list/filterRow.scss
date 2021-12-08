@@ -1,0 +1,54 @@
+.filter-row{
+    .row1 .left,
+    .row2 {
+        white-space: nowrap;
+        overflow: auto;
+        box-sizing: border-box; // ios水平滚动条 没有效果
+        -webkit-overflow-scrolling: auto;
+        &::-webkit-scrollbar {
+            display: none;
+            // width: 0 !important;
+            // height: 0 !important;
+            // color: rgba(255,200,200,1) !important;
+            // background-color: rgba(255,200,200,1) !important;
+            // -webkit-overflow-scrolling: auto;
+        }
+        // &::-webkit-scrollbar-track {
+        //     width: 0 !important;
+        //     height: 0 !important;
+        //     color: transparent !important;
+        //     background-color: transparent !important;
+        // }
+    }
+    .scroll-view{
+        width: 100%;
+    }
+    .filter-item{
+        display: inline-block;
+    }
+
+    .row1 {
+        .filter-item {
+            margin-right: 48rpx;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .right{
+            margin-left: 12rpx;
+        }
+    }
+
+    .row2 {
+        margin-top: 32rpx;
+
+        .filter-item {
+            margin-right: 24rpx;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+{
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/listProduct/listProduct",
+      "style": {
+        "navigationBarTitleText": "page2",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/user/index",
+      "style": {
+        "navigationBarTitleText": "个人中心",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/listAuthor/listAuthor",
+      "style": {
+        "navigationBarTitleText": "page1",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/listLive/listLive",
+      "style": {
+        "navigationBarTitleText": "page4",
+        "navigationStyle": "custom"
+      }
+    }
+  ],
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      // uni-ui 规则如下配置
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "rpxCalcMaxDeviceWidth": 960, // rpx 计算所支持的最大设备宽度，单位 px，默认值为 960
+    "rpxCalcBaseDeviceWidth": 375, // rpx 计算使用的基准设备宽度，设备实际宽度超出 rpx 计算所支持的最大设备宽度时将按基准宽度计算，单位 px，默认值为 375
+    "rpxCalcIncludeWidth": 750 // rpx 计算特殊处理的值，始终按实际的设备宽度计算，单位 rpx，默认值为 750
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#3062F2",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/image/home/home.png",
+        "selectedIconPath": "static/image/home/home_a.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/listAuthor/listAuthor",
+        "iconPath": "static/image/home/author.png",
+        "selectedIconPath": "static/image/home/author_a.png",
+        "text": "达人"
+      },
+      {
+        "pagePath": "pages/listProduct/listProduct",
+        "iconPath": "static/image/home/product.png",
+        "selectedIconPath": "static/image/home/product_a.png",
+        "text": "商品"
+      },
+      {
+        "pagePath": "pages/listLive/listLive",
+        "iconPath": "static/image/home/live.png",
+        "selectedIconPath": "static/image/home/live_a.png",
+        "text": "直播"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "iconPath": "static/image/home/user.png",
+        "selectedIconPath": "static/image/home/user_a.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

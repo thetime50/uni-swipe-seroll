@@ -1,0 +1,13 @@
+view,
+scroll-view,
+swiper-item {
+    // display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    flex-grow: 0;
+    flex-basis: auto;
+    align-items: normal;
+    align-content: normal;
+    display: block;
+}
+
